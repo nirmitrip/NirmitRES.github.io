@@ -5,7 +5,7 @@ layout: default
 # Nirmit  
 ### Ethical Hacking • Penetration Testing • Threat Detection
 
-> **Offense-informed defense. Defense-informed offense.**
+> **I build systems, break them, and defend them.**
 
 I am a cybersecurity practitioner focused on hands-on ethical hacking, penetration testing, and detection engineering. I build real lab environments to simulate attacks, analyze system behavior, and understand how threats are detected in modern security operations.
 
