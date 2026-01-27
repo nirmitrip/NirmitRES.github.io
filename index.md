@@ -2,122 +2,60 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
+# Nirmit  
+### Ethical Hacking • Penetration Testing • Threat Detection
 
-[Link to another page](./another-page.html).
+> **Offense-informed defense. Defense-informed offense.**
 
-There should be whitespace between paragraphs.
+I am a cybersecurity practitioner focused on hands-on ethical hacking, penetration testing, and detection engineering. I build real lab environments to simulate attacks, analyze system behavior, and understand how threats are detected in modern security operations.
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+---
 
-# Header 1
+## 🧠 What I Do
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+- Perform attack simulations in controlled lab environments  
+- Study how systems are compromised and how defenses respond  
+- Build SIEM-based detection labs (Wazuh, log monitoring, alert analysis)  
+- Practice offensive security techniques using Kali Linux  
+- Analyze authentication logs, processes, and network activity  
 
-## Header 2
+---
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+## 🎯 Career Focus
 
-### Header 3
+My goal is to become a **Professional Ethical Hacker and Penetration Tester**, with strong knowledge of:
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+- Offensive security methodologies  
+- Vulnerability discovery and exploitation  
+- Network reconnaissance  
+- Detection evasion concepts  
+- Security monitoring and alert analysis  
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+---
 
-#### Header 4
+## 🛠 Technical Areas
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+### Offensive Security
+- Network scanning & enumeration  
+- Attack simulation  
+- System exploitation fundamentals  
 
-##### Header 5
+### Defensive Security
+- SIEM deployment (Wazuh)  
+- Log analysis  
+- Threat detection  
+- Endpoint monitoring  
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
+---
 
-###### Header 6
+## 🚨 Featured Work
 
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
+➡️ Enterprise SIEM Lab (Attack Simulation + Detection Engineering)  
+*(Full project documentation coming soon)*
 
-### There's a horizontal rule below this.
+---
 
-* * *
+## 🔗 Connect
 
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+- 🔗 **GitHub:** [github.com/nirmitrip](https://github.com/nirmitrip)  
+- 🔗 **LinkedIn:** [linkedin.com/in/nirmit-raut-a28490272](https://www.linkedin.com/in/nirmit-raut-a28490272)
