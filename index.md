@@ -75,5 +75,6 @@ Developed a host-level monitoring utility to study system input capture and beha
 
 ## 🔗 Connect
 
-GitHub: https://github.com/nirmitrip  
-LinkedIn: https://linkedin.com/in/nirmit-raut-a28490272  
+- 🔗 **GitHub:** [github.com/nirmitrip](https://github.com/nirmitrip)
+- 🔗 **LinkedIn:** [linkedin.com/in/nirmit-raut-a28490272](https://linkedin.com/in/nirmit-raut-a28490272)
+
