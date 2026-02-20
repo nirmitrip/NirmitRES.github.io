@@ -19,58 +19,25 @@ Hands-on implementations demonstrating red and blue team principles.
 
 ### 🛡️ SIEM Deployment & SOC Simulation Lab
 
-Deployed and configured a Wazuh SIEM environment to simulate real-world Security Operations Center workflows.
+Simulated a SOC environment using Wazuh SIEM and Atomic Red Team to validate detection workflows and alert visibility.
 
-**Key Work**
-- Configured Wazuh SIEM on Ubuntu VM  
-- Integrated Windows endpoint agent for centralized log collection  
-- Executed Atomic Red Team attack simulations  
-- Investigated alert severity levels and detection triggers  
-
-**Stack:** Wazuh • Ubuntu • Windows • Atomic Red Team
+[View Full Project →](siem-lab)
 
 ---
 
 ### 🕵️ Custom Multi-Service Honeypot (SSH & HTTP)
 
-Engineered a Python-based honeypot to emulate exposed network services and observe adversary interaction patterns.
+Built a Python-based honeypot to emulate exposed network services and capture adversary interaction patterns in a controlled lab.
 
-**Key Work**
-- Implemented socket-level SSH and HTTP service emulation  
-- Configured realistic protocol banners  
-- Logged attacker IP addresses, timestamps, and payload data  
-- Conducted behavioral observation in isolated lab  
-
-**Stack:** Python • Socket Programming • Multi-threading
+[View Full Project →](honeypot)
 
 ---
 
 ### 💻 Endpoint Telemetry & Behavioral Monitoring Tool
 
-Developed a host-level monitoring utility to study system input capture and behavioral logging in a sandboxed environment.
+Developed a host-level monitoring utility to analyze input capture behavior and structured logging within an isolated environment.
 
-**Key Work**
-- Implemented system-level event listener  
-- Designed structured logging mechanism  
-- Evaluated endpoint visibility artifacts in virtual environment  
-
-**Stack:** Python • Event Handling • Logging
-
----
-
-## 🧠 Technical Focus
-
-### Offensive Security
-- Network scanning & enumeration  
-- Vulnerability assessment fundamentals  
-- Attack simulation & adversary emulation  
-
-### Defensive Security
-- SIEM deployment (Wazuh)  
-- Log analysis & alert investigation  
-- Threat detection workflows  
-- Endpoint monitoring research  
-
+[View Full Project →](endpoint-tool)
 ---
 
 ## 🔗 Connect
