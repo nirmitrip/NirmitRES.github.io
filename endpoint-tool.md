@@ -5,41 +5,56 @@ title: Endpoint Telemetry & Behavioral Monitoring Tool
 
 # Endpoint Telemetry & Behavioral Monitoring Tool
 
-## Overview
-This project involved developing a Python-based endpoint monitoring utility to study system-level input capture and behavioral logging within an isolated virtual environment.
+[← Back to Home](./)
 
-The goal was to understand host-level visibility, input event monitoring, and structured logging mechanisms in a controlled lab setting.
+## Overview
+This project focused on developing a host-level monitoring utility to study system input capture and behavioral logging within an isolated virtual machine environment.
+
+The objective was to better understand endpoint visibility mechanisms, structured logging practices, and how host-level activity may be monitored for security analysis.
 
 ---
 
 ## Architecture
-- Python event listener implementation
-- System-level keyboard input monitoring
-- Structured local log storage
-- Controlled virtual machine execution environment
+The monitoring tool consisted of:
+
+- Python-based system event listener  
+- Keyboard input capture mechanism  
+- Structured log file output  
+- Execution in isolated Windows test environment  
+
+The tool was designed strictly for controlled experimentation and research within a sandboxed lab setup.
 
 ---
 
 ## Monitoring Implementation
-- Utilized system event listener library for input capture
-- Filtered and normalized keystroke data
-- Implemented structured logging format
-- Stored captured input in secure local log file
+The tool utilized a system-level event listener library to capture input events and normalize data into structured log entries.
 
-The tool was executed strictly within an isolated lab VM to ensure safe experimentation and controlled analysis.
+Key implementation details:
+
+- Filtering of special key inputs  
+- Normalization of captured keystrokes  
+- Append-based structured log writing  
+- Controlled execution within virtual test environment  
+
+This allowed study of how host-level activity can be logged and analyzed.
+
+![Endpoint Monitoring Output](assets/images/endpoint-log.png)
 
 ---
 
 ## Observations
-- Studied host-level input capture behavior
-- Evaluated system response and visibility artifacts
-- Analyzed how endpoint-level activity may be logged or monitored
-- Observed differences in execution behavior under various configurations
+Through controlled testing, the project provided insight into:
+
+- How input-level telemetry can be captured  
+- How behavioral logging mechanisms operate  
+- The visibility of endpoint-level activity within monitoring systems  
+- Differences between raw event capture and structured logging  
 
 ---
 
 ## Key Takeaways
-- Improved understanding of endpoint telemetry mechanisms
-- Strengthened knowledge of host-level monitoring concepts
-- Explored behavioral data logging practices
-- Gained insight into detection visibility at the endpoint layer
+- Strengthened understanding of endpoint telemetry concepts  
+- Explored host-level behavioral monitoring mechanisms  
+- Gained practical experience in structured logging design  
+- Improved knowledge of endpoint visibility in security contexts  
+- Developed awareness of defensive monitoring implications
