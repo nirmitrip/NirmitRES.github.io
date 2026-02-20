@@ -38,6 +38,7 @@ Built a Python-based honeypot to emulate exposed network services and capture ad
 Developed a host-level monitoring utility to analyze input capture behavior and structured logging within an isolated environment.
 
 [View Full Project →](endpoint-tool)
+
 ---
 
 ## 🔗 Connect
