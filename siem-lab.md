@@ -39,7 +39,7 @@ Techniques executed included:
 
 These actions were performed intentionally to trigger predefined Wazuh detection rules and validate rule effectiveness.
 
-![Atomic Red Team Execution](/assets/images/AtomicRedTeam.jpeg)
+![Atomic Red Team Execution](/assets/images/Atomic-RedTeam.jpeg)
 
 ---
 
