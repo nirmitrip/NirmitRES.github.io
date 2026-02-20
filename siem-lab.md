@@ -1,9 +1,18 @@
+---
+layout: default
+title: SIEM Deployment & SOC Simulation Lab
+---
+
+# SIEM Deployment & SOC Simulation Lab
+
+[← Back to Home](./)
+
 ## Overview
 This lab was designed to simulate a real-world Security Operations Center (SOC) workflow using Wazuh SIEM. The objective was to deploy centralized log monitoring, execute controlled adversary simulations, and validate detection capabilities through rule-based alerting.
 
 The environment was built to mirror enterprise detection architecture, focusing on log ingestion, rule correlation, and alert severity analysis.
 
-![Wazuh Dashboard Overview](assets/images/siem-dashboard.png)
+![Wazuh Dashboard Overview](/assets/images/siem-dashboard.jpeg)
 
 ---
 
@@ -30,7 +39,7 @@ Techniques executed included:
 
 These actions were performed intentionally to trigger predefined Wazuh detection rules and validate rule effectiveness.
 
-![Atomic Red Team Execution](assets/images/atomic-execution.png)
+![Atomic Red Team Execution](/assets/images/siem-overview.jpeg)
 
 ---
 
@@ -45,7 +54,7 @@ Alert analysis included:
 
 The dashboard confirmed proper ingestion, indexing, and visualization of security events.
 
-![PowerShell Detection Alert - Rule Level 14](assets/images/siem-events.png)
+![PowerShell Detection Alert - Rule Level 14](/assets/images/siem-events.jpeg)
 
 ---
 
