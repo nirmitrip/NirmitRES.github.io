@@ -5,46 +5,59 @@ title: Custom Multi-Service Honeypot (SSH & HTTP)
 
 # Custom Multi-Service Honeypot (SSH & HTTP)
 
-## Overview
-This project involves the development of a lightweight Python-based honeypot designed to emulate SSH and HTTP services. The objective was to observe adversary interaction patterns and log malicious connection attempts in a controlled lab environment.
+[← Back to Home](./)
 
-The honeypot simulates exposed network services to attract unauthorized access attempts while safely capturing behavioral data for analysis.
+## Overview
+This project involved designing and implementing a lightweight multi-service honeypot to emulate exposed SSH and HTTP services. The objective was to observe adversary interaction patterns, log connection attempts, and analyze behavioral characteristics of unsolicited inbound traffic within a controlled lab environment.
+
+The honeypot was intentionally developed from scratch using Python to better understand service emulation, socket-level communication, and attacker reconnaissance behavior.
 
 ---
 
 ## Architecture
-- Python-based socket server
-- Multi-threaded service handling
-- SSH service emulation (Port 22)
-- HTTP service emulation (Port 80)
-- Local log storage for captured data
-- Isolated virtual lab environment
+The honeypot environment consisted of:
+
+- Python-based TCP socket listeners  
+- Multi-threaded handling for concurrent connections  
+- SSH service emulation on Port 22  
+- HTTP service emulation on Port 80  
+- Structured local logging mechanism  
+- Execution within isolated virtual lab environment  
+
+This setup allowed safe observation of inbound traffic without exposing production systems.
 
 ---
 
-## Service Emulation Strategy
-- Implemented socket-level TCP listeners
-- Configured realistic SSH and HTTP protocol banners
-- Accepted inbound connections
-- Captured and logged:
-  - Source IP addresses
-  - Timestamps
-  - Raw payload data
+## Service Emulation & Logging
+The honeypot was engineered to mimic legitimate service banners to increase interaction likelihood:
 
-The system was intentionally designed to remain simple while demonstrating foundational service emulation and adversary interaction logging.
+- SSH banner emulating OpenSSH version string  
+- HTTP response simulating Apache server header  
+- Timestamped logging of:
+  - Source IP addresses  
+  - Connection attempts  
+  - Raw payload data  
+
+Multi-threading ensured the honeypot could handle multiple simultaneous inbound requests without blocking execution.
+
+![Honeypot Log Output](assets/images/honeypot-log.png)
 
 ---
 
 ## Observations
-- Identified connection attempts targeting default SSH service
-- Observed automated scanning behavior
-- Logged structured attacker interaction data
-- Validated multi-threaded stability under concurrent connection attempts
+During testing, the honeypot captured:
+
+- Automated scanning attempts targeting default SSH ports  
+- Repeated connection attempts from the same IP ranges  
+- Suspicious payload data consistent with reconnaissance behavior  
+
+These observations reinforced the importance of monitoring exposed services and understanding adversary probing techniques.
 
 ---
 
 ## Key Takeaways
-- Improved understanding of exposed attack surfaces
-- Gained hands-on experience with socket programming
-- Learned how service emulation influences adversary behavior
-- Strengthened knowledge of basic threat intelligence collection concepts
+- Gained hands-on experience with socket-level network programming  
+- Developed understanding of service fingerprinting and banner emulation  
+- Learned how attackers interact with exposed services  
+- Strengthened practical knowledge of threat intelligence data collection  
+- Improved understanding of network-layer attack surface exposure
