@@ -8,9 +8,9 @@ title: Endpoint Telemetry & Behavioral Monitoring Tool
 [← Back to Home](./)
 
 ## Overview
-This project focused on developing a host-level monitoring utility to study system input capture and behavioral logging within an isolated virtual machine environment.
+This project focused on developing a host-level telemetry utility to study system input capture and structured behavioral logging within an isolated virtual machine environment.
 
-The objective was to better understand endpoint visibility mechanisms, structured logging practices, and how host-level activity may be monitored for security analysis.
+The objective was to understand endpoint visibility mechanisms, event normalization techniques, and how host-level activity may be captured and analyzed during controlled security research.
 
 ---
 
@@ -19,26 +19,47 @@ The monitoring tool consisted of:
 
 - Python-based system event listener  
 - Keyboard input capture mechanism  
-- Structured log file output  
-- Execution in isolated Windows test environment  
+- Event normalization layer  
+- Timestamped structured log output  
+- Execution within isolated Windows test environment  
 
-The tool was designed strictly for controlled experimentation and research within a sandboxed lab setup.
+The tool was developed strictly for controlled experimentation within a sandboxed lab setup.
 
 ---
 
-## Monitoring Implementation
-The tool utilized a system-level event listener library to capture input events and normalize data into structured log entries.
+## Implementation Approach
+The utility utilizes a system-level event listener to capture input events, normalize special keys, and write timestamped entries into a structured log file.
 
-Key implementation details:
+Below is a simplified implementation snippet:
 
-- Filtering of special key inputs  
-- Normalization of captured keystrokes  
-- Append-based structured log writing  
-- Controlled execution within virtual test environment  
+```python
+import datetime
 
-This allowed study of how host-level activity can be logged and analyzed.
+def on_press(key):
+    normalized = normalize_key(key)
+    if normalized:
+        log_event(normalized)
 
-![Endpoint Monitoring Output](assets/images/endpoint-log.png)
+def log_event(formatted_key):
+    timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    with open("endpoint_telemetry.log", "a") as f:
+        f.write(f"{timestamp} | {formatted_key}\n")
+```
+---
+
+This structure ensures consistent formatting and enables easier behavioral analysis during lab testing.
+
+Example Telemetry Output
+2026-02-18 15:02:11 | h
+2026-02-18 15:02:12 | e
+2026-02-18 15:02:13 | l
+2026-02-18 15:02:14 | l
+2026-02-18 15:02:15 | o
+2026-02-18 15:02:16 | [ENTER]
+2026-02-18 15:02:18 | [BACKSPACE]
+2026-02-18 15:02:20 | s
+2026-02-18 15:02:21 | e
+2026-02-18 15:02:22 | c
 
 ---
 
