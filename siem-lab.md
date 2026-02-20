@@ -54,6 +54,8 @@ Alert analysis included:
 
 The dashboard confirmed proper ingestion, indexing, and visualization of security events.
 
+![PowerShell Detection Alert - Rule Level 14](/assets/images/siem-dashboard.jpeg)
+
 ![PowerShell Detection Alert - Rule Level 14](/assets/images/siem-events.jpeg)
 
 ---
