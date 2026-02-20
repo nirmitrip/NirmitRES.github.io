@@ -12,7 +12,7 @@ This lab was designed to simulate a real-world Security Operations Center (SOC) 
 
 The environment was built to mirror enterprise detection architecture, focusing on log ingestion, rule correlation, and alert severity analysis.
 
-![Wazuh Dashboard Overview](/assets/images/siem-dashboard.jpeg)
+![Wazuh Dashboard Overview](/assets/images/siem-overview.jpeg)
 
 ---
 
